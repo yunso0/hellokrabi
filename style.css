@@ -1,0 +1,821 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Pretendard';
+    line-height: 22px;
+    font-size: 16px;
+    color: #333;
+    min-width: 1320px;
+}
+
+
+.top{
+    position:fixed; 
+    bottom:50px; 
+    right:50px; 
+    display:none;
+    z-index: 100;
+  }
+
+
+/* 헤더 */
+
+header {
+    position: relative;
+}
+
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav {
+    
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nav>li>a {
+    display: block;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.nav>li>a:hover {
+    color: #00B2BC;
+}
+
+.header_top {
+    width: 100%;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.header_top a {
+    display: block;
+    margin-left: 20px;
+    color: #b2b2b2;
+}
+
+.header_top a:hover{
+    color: #00B2BC;
+
+}
+
+
+/* 서브메뉴 */
+
+.sub {
+    width: 100%;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    background-color: rgb(255, 255, 255,0.5);
+    display: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.sub_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.sub_in ul{
+margin-left: 100px;
+text-align: center;
+}
+
+.menu1{
+    width: 70px;
+}
+
+.sub_in .menu2{
+    width: 69.14px;
+    margin-left: 92px;
+}
+
+.menu3{
+    width: 69.14px;
+}
+
+.menu4{
+    width: 116.39px;
+}
+
+
+.sub_in ul a{
+    text-align: center;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+}
+
+.sub_in ul a:hover{
+    color: #00B2BC;
+
+}
+
+
+/* 배너 */
+
+.banner{
+    width: 100%;
+    height: 830px;
+    margin: auto;
+    background: url(./img/mainb.jpg) no-repeat;
+    position: relative;
+}
+
+
+.banner_in{
+    width: 1320px;
+    margin: auto;
+    padding-top: 180px;
+}
+
+.banner_in h1{
+    margin-left: 80px;
+    font-size: 45px;
+    line-height: 60px;
+    font-weight: 400;
+}
+
+.banner_in span{
+    font-size: 65px;
+    line-height: 80px;
+    font-weight: 600;
+}
+
+.maimg1{
+    position: absolute;
+    left:2%;
+    bottom:10%;
+}
+
+.maimg2{
+    position: absolute;
+    right:10%;
+    bottom:2%;
+    animation: ani 0.8s ease-in-out infinite alternate
+   
+} 
+
+@keyframes ani {
+        0% {transform: translate(-20px, 20px);}
+        100% {transform: translateY(-30px);}
+      
+    }
+
+
+    /* 컨텐츠 */
+
+    .con1, .con2{
+        width: 1320px;
+        margin: auto;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-box;
+        display: flex;
+        align-items: end;
+        margin-bottom: 40px;
+    }
+.tatle{
+    width: 100%;
+    margin-left: 10px;
+}
+
+
+.tatle h2{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+   /* 컨텐츠1 관광지 */
+
+  /* 슬라이드배너 꾸미기 */
+.gallery {
+	width: 100%;
+	margin: auto;
+	padding: 0 0px 30px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+
+.gallery .swiper-slide a {
+	width: 100%;
+	height: 100%;
+ 
+}
+
+.gallery .swiper-slide img {
+	display: block;
+	width: 100%; 
+    transition: all 1s;
+    position: relative;
+   
+}
+.gallery .swiper-slide{
+    overflow: hidden;
+}
+
+.gallery .swiper-slide .context{
+    position: absolute;
+    font-size: 20px;
+    color: #fff;
+    bottom: 20px;
+    right: 0px;
+    overflow: hidden;
+    opacity: 0;
+    transition:all 0.5s;
+    text-shadow: 5px 10px 30px rgb(0, 0, 0,0.7); 
+
+}
+
+.gallery .swiper-slide a:hover .context{
+opacity: 1;
+right: 20px;
+}
+
+.gallery .swiper-slide img:hover{
+    transform: scale(1.2, 1.2);
+    
+}
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery .swiper-button-prev,
+.gallery .swiper-button-next{
+	width: 54px;
+	height: 54px;
+}
+
+.gallery .swiper-button-prev{
+    left: auto;
+    right: 500px;
+    top:-70px;
+}
+
+.gallery .swiper-button-next{
+    top:-70px;
+    right: 450px;
+}
+
+.gallery .swiper-button-prev:after,
+.gallery .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+.gallery .swiper-button-prev:after{
+	background: url(./img/next.png);
+}
+.gallery .swiper-button-next:after{
+	background: url(./img/prev.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery .swiper-pagination-bullet {
+	background: rgb(1, 81, 146);
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery .swiper-horizontal>.swiper-pagination-bullets,
+.gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+
+/* 컨텐츠2 */
+
+section{
+    width: 1320px;
+    margin: auto;
+    margin-top: 150px;
+}
+
+
+.brand{
+    margin: 100px 0;
+    width: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.brand h2{
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.bott{
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 40px;
+    border: 1px solid #00B2BC;
+    border-radius: 20px;
+    color: #00B2BC;
+}
+
+.bott:hover{
+ background-color: #00B2BC;
+ color: #fff;
+}
+
+.bott span{
+    font-size: 20px;
+    font-weight: 200;
+}
+/* 호텔 보러가기 a */
+
+.con2 .tatle{
+position: relative;
+}
+
+.bott2{
+    display: inline-block;
+    padding: 5px 20px;
+    border: 1px solid #00B2BC;
+    border-radius: 20px;
+    color: #00B2BC;
+    position: absolute;
+    right: 0;
+    top:30px
+}
+
+.bott2:hover{
+    background-color: #00B2BC;
+    color: #fff;
+}
+
+
+
+
+
+/* 슬라이드배너 꾸미기 */
+.gallery2 {
+	width: 100%;
+	margin: auto;
+	padding: 0 0px 40px;
+	box-sizing: border-box;
+	position: relative;
+    margin-bottom: 100px;
+}
+
+.gallery2_inner {
+	width: 100%;
+	overflow: hidden;
+    transition: all 2s;
+}
+
+.gallery2 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+    transition: all 2s;
+
+   
+}
+
+.gallery2 .swiper-slide img {
+	display: block;
+	width: 100%;
+    position: relative;
+    transition: all 1s;
+}
+
+.gallery2 .swiper-slide{
+    overflow: hidden;
+}
+.gallery2 .swiper-slide .hotelimg{
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.6s linear;
+    
+}
+
+.gallery2 .swiper-slide a:hover .hotelimg{
+   opacity: 1;
+
+}
+
+/* .gallery2 .swiper-slide img:hover{
+    transform: scale(1.2, 1.2);
+} */
+
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery2 .swiper-button-prev,
+.gallery2 .swiper-button-next{
+	width: 54px;
+	height: 54px;
+}
+
+.gallery2 .swiper-button-prev{
+    left: -25px;
+    top: 46%
+
+}
+
+.gallery2 .swiper-button-next{
+    right: -25px;
+    top: 46%
+}
+
+.gallery2 .swiper-button-prev:after,
+.gallery2 .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+.gallery2 .swiper-button-prev:after{
+	background: url(./img/next.png);
+}
+.gallery2 .swiper-button-next:after{
+	background: url(./img/prev.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery2 .swiper-pagination-bullet {
+	background: #00B2BC;
+	width: 10px;
+	height: 10px;
+	opacity: 0.2;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery2 .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery2 .swiper-horizontal>.swiper-pagination-bullets,
+.gallery2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+ /* 호텔 상세정보 */
+ .hoteltext{
+    width: 100%;
+    height: 130px;
+    background-color: rgb(0, 0, 0,0.5);
+    box-sizing: border-box;
+    position: absolute;
+    bottom: -130px;
+    padding: 20px 20px;
+    overflow: hidden;
+    transition: all 1s;
+ }
+
+ .gallery2 .hoteltext .star{
+    align-items: center;
+    margin-bottom: 5px;
+ }
+
+
+ .gallery2 .hoteltext .star img{
+    width: auto;
+display: block;
+ }
+
+ .gallery2 .hoteltext .star p{
+  margin-left: 5px;
+font-size: 15px;
+ }
+
+ .hoteltext h3{
+    color: #fff;
+    font-size: 20px;
+    margin-bottom: 10px;
+ }
+
+ .hoteltext p{
+    font-size: 18px;
+    color: #ddd;
+ }
+
+ .swiper-slide:hover .hoteltext{
+    opacity: 1;
+    bottom: 0%;
+ }
+
+
+
+ /* 컨텐츠3 맛집 */
+
+.restext{
+    padding: 15px 10px 0px ;
+}
+
+.restext h3{
+    margin-bottom: 10px;
+}
+
+.star{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.star img{
+    width: 16px;
+    height: 15px;
+}
+
+
+  /* 슬라이드배너 꾸미기 */
+.gallery3{
+	width: 100%;
+	margin: auto;
+	padding: 0 0px 40px;
+	box-sizing: border-box;
+	position: relative;
+   
+}
+
+.gallery3_inner {
+	width: 100%;
+	overflow: hidden;
+
+}
+
+.gallery3 .swiper-slide a {
+	width: 100%;
+	height: 100%;
+   
+}
+
+.gallery3 .swiper-button-prev{
+    left: -23px;
+    top: 36%;
+
+}
+
+.gallery3 .swiper-button-next{
+    right: -15px;
+    top: 36%;
+}
+
+.gallery3 .swiper-slide img {
+	display: block;
+
+}
+
+.gallery3 .swiper-slide{
+    overflow: hidden;
+}
+
+.gallery3 .swiper-slide a:hover .restext h3{
+text-decoration: underline;
+}
+
+
+/* .gallery3 .swiper-slide img:hover{
+    transform: scale(1.2, 1.2);
+    transition: all 1s;
+} */
+
+
+/* 이동버튼 이미지로 바꾸기 */
+.gallery3 .swiper-button-prev,
+.gallery3 .swiper-button-next{
+	width: 45px;
+	height: 45px;
+}
+.gallery3 .swiper-button-prev:after,
+.gallery3 .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+.gallery3 .swiper-button-prev:after{
+	background: url(./img/next.png);
+}
+.gallery3 .swiper-button-next:after{
+	background: url(./img/prev.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.gallery3 .swiper-pagination-bullet {
+	background: #00B2BC;
+	width: 10px;
+	height: 10px;
+	opacity: 0.2;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.gallery3 .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.gallery3 .swiper-horizontal>.swiper-pagination-bullets,
+.gallery3 .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+
+
+
+/* 푸터 */
+footer{
+    width: 100%;
+    margin: auto;
+    height: 650px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+
+}
+
+.foimg1{
+    width: 2800px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    animation: fotani1 10s  ease-in-out infinite alternate ;
+}
+
+.foimg2{
+    width: 2800px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    animation: fotani2 10s ease-in-out infinite alternate;
+}
+
+.fotpix{
+    position: absolute;
+    left:20%;
+    bottom: 380px;
+    z-index: 3;
+    animation: fotani3 3s  ease-in-out infinite alternate ;
+
+}
+
+
+@keyframes fotani1{
+    0% {transform: translateX(-30%);}
+    100% {transform: translateX(0%);} 
+
+}
+
+@keyframes fotani2{
+    0% {transform: translateX(0%);}
+    100% {transform: translateX(-30%);} 
+
+}
+
+@keyframes fotani3{
+    0% {transform: translateX(150px);}
+}
+
+/* 컨텐츠5 비디오 */
+.content5{
+    width: 1320px;
+    margin: 150px auto;
+    text-align: center;
+
+}
+
+.content5 img{
+    width: 100%;
+    display: inline-block;
+}
+
+.bott3{
+    margin-top: 30px;
+    display: inline-block;
+    padding: 10px 20px;
+    border: 1px solid #00B2BC;
+    border-radius: 20px;
+    color: #00B2BC;
+
+}
+
+.bott3:hover{
+    background-color: #00B2BC;
+    color: #fff;
+}
+
+
+
+
+.footer_in{
+    position: relative;
+    z-index: 90;
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    margin-top: 430px;
+}
+.footerbox{
+    width: 60%;
+    text-align: left;
+}
+
+
+.footer_in ul{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer_in li{
+    margin-right: 10px;
+}
+
+
+.footer_in li a{
+    color: #fff;
+    font-size: 18px;
+    display: block;
+}
+
+.footer_in li a:hover{
+    color: #006166
+}
+
+/* 푸터 */

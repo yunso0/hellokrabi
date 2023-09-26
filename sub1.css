@@ -1,0 +1,1274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Pretendard';
+    line-height: 24px;
+    font-size: 16px;
+    color: #333;
+    min-width: 1320px;
+}
+
+p{
+    font-size: 16px;
+}
+
+.top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    z-index: 100;
+}
+
+
+.sub_fixed {
+    position: fixed;
+    bottom: 250px;
+    right: 250px;
+    z-index: 50;
+    display: none;
+}
+
+
+
+.sub_top {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    display: none;
+    z-index: 100;
+}
+
+
+/* 헤더 */
+
+header {
+    position: relative;
+    border: 1px solid #ddd;
+}
+
+
+.header_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+.nav {
+
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.nav>li>a {
+    display: block;
+    margin-left: 100px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: right;
+}
+
+.nav>li>a:hover {
+    color: #00B2BC;
+}
+
+.header_top {
+    width: 100%;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+
+}
+
+.header_top a {
+    display: block;
+    margin-left: 20px;
+    color: #7c7c7c;
+}
+
+.header_top a:hover {
+    color: #00B2BC;
+
+}
+
+
+/* 서브메뉴 */
+
+.sub {
+    width: 100%;
+    position: absolute;
+    top: 84px;
+    left: 0;
+    background-color: rgb(255, 255, 255, 0.5);
+    display: none;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.sub_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: flex-end;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+.sub_in ul {
+    margin-left: 100px;
+    text-align: center;
+}
+
+.menu1 {
+    width: 70px;
+}
+
+.sub_in .menu2 {
+    width: 69.14px;
+    margin-left: 92px;
+}
+
+.menu3 {
+    width: 69.14px;
+}
+
+.menu4 {
+    width: 116.39px;
+}
+
+
+.sub_in ul a {
+    text-align: center;
+    display: block;
+    margin: 10px 0px 10px 0px;
+    font-size: 16px;
+}
+
+.sub_in ul a:hover {
+    color: #00B2BC;
+
+}
+
+
+/* 서브메뉴 */
+
+/* 서브1-브랜드소개 */
+section {
+    width: 1320px;
+    margin: auto;
+    overflow: hidden;
+
+}
+
+.brand_title {
+    margin: 100px 0;
+    text-align: center;
+}
+
+h6 {
+    display: inline-block;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 20px;
+    border: 2px solid #00B2BC;
+    padding: 4px 40px;
+    color: #00B2BC;
+    margin-bottom: 20px;
+
+
+}
+
+h2 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+
+.box1,
+.box2,
+.box3 {
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.text {
+    width: 630px;
+
+}
+
+h3 {
+    font-size: 40px;
+    line-height: 45px;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+section p {
+    margin-bottom: 20px;
+}
+
+/* 컨텐츠2 -아이콘 */
+
+.content2 {
+    margin-top: 100px;
+    width: 100%;
+    background-color: #cfe5e6;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.iconbox {
+    width: 1000px;
+    margin: auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+h4 {
+    color: #00B2BC;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.iconbox h5 {
+
+    font-size: 20px;
+    margin: 20px 0px 10px;
+
+    color: #545454;
+}
+
+.iconbox p {
+    color: #5f5f5f;
+}
+
+.iconbox img {
+    width: 104px;
+    height: 104px;
+}
+
+.brand_title span {
+    color: #00B2BC;
+}
+
+/* 컨텐츠3 캐릭터 */
+
+.content3 {
+    width: 1320px;
+    margin: auto;
+}
+
+.content3 img {
+    display: inline-block;
+}
+
+.content3 h3 {
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.chbox {
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+.tatle {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: nowrap;
+    margin: 150px 0 0;
+}
+
+.tatle img {
+    width: 18px;
+    height: 18px;
+    display: block;
+    margin-right: 10px;
+}
+
+.tatle h4 {
+    color: #333;
+    font-weight: 500;
+}
+
+.tatle span {
+    color: #ddd;
+}
+
+
+
+.back_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    
+}
+
+
+
+.back1 {
+    width: 100%;
+    margin: 100px auto 0;
+    background-color: #08b9bf;
+    overflow: hidden;
+}
+
+.motionc1, .motionc2{
+    
+    padding-top: 100px;
+}
+
+.back1 h1 {
+    color: #fff;
+    font-size: 60px;
+    font-family: 'Cafe24Ssurround';
+}
+
+.back1 h1 span {
+    font-size: 40px;
+}
+
+.back1 h3 {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 30px;
+}
+
+.back1 h5 {
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+.back2 {
+    width: 100%;
+    margin: auto;
+    background-color: #f5efbf;
+    overflow: hidden;
+}
+
+
+.back2 h1 {
+    color: #e67d00;
+    font-size: 60px;
+    font-family: 'Cafe24Ssurround';
+}
+
+.back2 h1 span {
+    font-size: 40px;
+}
+
+.back2 h3 {
+    margin-top: 20px;
+    color: #e67d00;
+    font-size: 30px;
+}
+
+.back2 h5 {
+    color: #e67d00;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+
+
+.char1{
+    width: 1320px;
+    margin: 50px auto;
+
+}
+
+
+
+/* 서브1-브랜드소개 */
+
+/* 서브2-여행정보 */
+
+
+
+.sub2_top{
+    width: 100%;
+    height: 427px;
+    background: url(./img/sub/sub_banner.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.sub2_top h2{
+    padding-top: 140px;
+}
+
+#sub2{
+    width: 1320px;
+    margin: 0 auto ;
+    text-align: center;
+    padding: 100px 0;
+}
+
+
+#sub2 h3{
+    font-size: 35px;
+}
+
+
+#sub2 h4{
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+
+#sub2 img{
+    transition: all 0.5s;
+}
+
+
+#sub2 img:hover{
+    transform: scale(1.1);
+}
+
+.imgbox{
+    width: 516px;
+    height: 400px;
+    overflow: hidden;
+   
+}
+
+.spot1, .spot2, .spot3, .spot4{
+    width: 1000px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid #ddd;
+    overflow: hidden;
+    margin: 100px 0;
+}
+
+.spot1, .spot3{
+    margin-left: 50px;
+ }
+
+.spot2, .spot4{
+   margin-left: 220px;
+}
+
+.spottext{
+    width: 490px;
+    padding: 80px 60px;
+    text-align: left;
+}
+
+.subban2{
+    width: 100%;
+   height: 400px;
+   margin: 150px 0;
+    background: url(./img/sub/sub_banner02.png) no-repeat center;
+    background-size: cover;
+    text-align: center;
+}
+
+.subban2 h1{
+    padding: 130px 0 0;
+    font-size: 50px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+
+.subban2 h4{
+    color: #fff;
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 400;
+    padding: 50px 0 0;
+}
+
+.sub_hotel{
+    padding: 100px 0;
+    margin: 0 auto;
+    width: 1320px;
+    height: 700px;
+    background: url(./img/sub/sub_hotel.jpg) no-repeat left;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.hotelbox{
+    padding:0 60px;
+    box-sizing: border-box;
+    margin-bottom: 100px;
+}
+
+
+.hotelbox h3{
+    color: #fff;
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.hotelbot{
+    margin-top: 100px;
+}
+
+.hotelbot li{
+ width: 155px;
+ margin-bottom: 10px;
+}
+
+.hotelbot a{
+    text-align: center;
+display: block;
+color: #333;
+font-size: 22px;
+background-color: rgb(255, 255, 255,0.5);
+padding: 8px 8px;
+border-radius: 20px;
+}
+
+.hotelbot a:hover, .hotelbot .on a {
+    background-color: #08b9bf;
+    color: #fff;
+}
+
+
+
+.star{
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.star img{
+    width: 16px;
+    height: 15px;
+}
+
+.hoteltext h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    line-height: 20px;
+}
+
+.hoteltext p{
+    font-size: 15px;
+    color: #808080;
+
+}
+
+
+.hotellist{
+    margin-left: 50px;
+    width: 980px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.hotellist li{
+    background-color: #fff;
+    width: 307px;
+    height: 400px;
+ box-shadow: 5px 5px 20px rgb(0, 0, 0,0.3);
+}
+
+.hotellist li:hover .hoteltext h3{
+    color: #08b9bf;
+    text-decoration: underline;
+    font-weight: bold;
+    
+}
+
+
+.hoteltext .star{
+    align-items: center;
+    margin-bottom: 5px;
+ }
+
+.hoteltext .star p{
+    margin-top: 1px;
+    margin-left: 5px;
+  font-size: 15px;
+   }
+  
+
+
+.hoteltext{
+    padding: 10px 15px;
+}
+
+.hotellist{
+    margin-left: 50px;
+    width: 980px;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.popup1, .popup2, .popup3{
+    position: absolute;
+    top:258px;
+    right: 0;
+}
+
+
+.popup2, .popup3{
+    display: none;
+}
+
+
+
+
+#tourlist{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+}
+.tourtitle{
+    width: 30%;
+}
+
+.tourtitle h2{
+    margin-top: 100px;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+/* 슬라이드배너 꾸미기 */
+.sub2_gallery {
+	width: 70%;
+	margin: 50px 0px 150px 0px;
+	padding: 0 50px 40px;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.sub2_gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.sub2_gallery .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.sub2_gallery .swiper-slide{
+    overflow: hidden;
+}
+
+.sub2_gallery .swiper-slide img {
+	display: block;
+	width: 100%;
+    transition: all 1s;
+}
+
+
+
+
+.sub2_gallery .swiper-slide img:hover{
+    transform: scale(1.1, 1.1);
+    
+}
+
+.sub2_gallery .swiper-slide .context{
+    position: absolute;
+    font-size: 22px;
+    color: #fff;
+    bottom: 20px;
+   left: 15px;
+    overflow: hidden;
+    opacity: 0;
+    transition:all 0.5s;
+    text-shadow: 5px 10px 30px rgb(0, 0, 0,0.7); 
+}
+
+.sub2_gallery .swiper-slide a:hover .context{
+    opacity: 1;
+    right: 20px;
+    }
+
+.sub2_gallery .swiper-slide{
+    margin-top: 200px;
+}
+
+
+.sub2_gallery .twoclass{
+    margin-top: 50px;
+}
+/* 이동버튼 이미지로 바꾸기 */
+.sub2_gallery .swiper-button-prev,
+.sub2_gallery .swiper-button-next{
+	width: 82px;
+	height: 82px;
+}
+.sub2_gallery .swiper-button-prev:after,
+.sub2_gallery .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 82px;
+	height: 82px;
+}
+
+.sub2_gallery .swiper-button-prev{
+    left: 10px;
+    top: 500px;
+}
+
+.sub2_gallery .swiper-button-next{
+    top:500px;
+}
+
+.sub2_gallery .swiper-button-prev:after{
+	background: url(./img/sub/tourbot-1.png);
+}
+.sub2_gallery .swiper-button-next:after{
+	background: url(./img/sub/tourbot-2.png);
+}
+
+
+
+
+
+
+
+/* 맛집슬라이드 */
+/* 슬라이드배너 꾸미기 */
+.sub2_gallery2{
+	width: 1320px;
+	margin: 70px auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.sub2_gallery2_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.sub2_gallery2 .swiper-slide a {
+	width: 100%;
+    height: 100%;
+
+}
+
+.sub2_gallery2 .swiper-slide a:hover .restext h3{
+    text-decoration: underline;
+}
+
+.sub2_gallery2 .swiper-slide img {
+	display: block;
+   
+}
+
+
+.sub2_gallery2 .swiper-button-prev,
+.sub2_gallery2 .swiper-button-next{
+	width: 45px;
+	height: 45px;
+}
+.sub2_gallery2 .swiper-button-prev:after,
+.sub2_gallery2 .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 45px;
+	height: 45px;
+}
+
+.sub2_gallery2 .swiper-button-prev{
+    position: absolute;
+    left: auto;
+    right: 60px;
+    top:-40px;
+  
+}
+
+.sub2_gallery2 .swiper-button-next{
+    position: absolute;
+    top:-40px;
+    right: 10px;
+}
+
+.sub2_gallery2 .swiper-button-prev:after{
+	background: url(./img/next.png);
+}
+.sub2_gallery2 .swiper-button-next:after{
+	background: url(./img/prev.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.sub2_gallery2 .swiper-pagination-bullet {
+	background: pink;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.sub2_gallery2 .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.sub2_gallery2 .swiper-horizontal>.swiper-pagination-bullets,
+.sub2_gallery2 .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+
+.restext{
+    padding: 5px 0px 0px ;
+}
+
+.restext p{
+    font-size: 15px;
+    margin-left: 5px;
+    margin-bottom: 3px;
+}
+
+.restext h3{
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+
+.restext span{
+    font-size: 16px;
+}
+
+
+
+/* 서브2-여행정보 */
+
+
+/* 서브3-후기 */
+
+#sub3{
+    width: 1080px;
+    margin: 80px auto;
+    text-align: center;
+}
+
+#sub3 h4{
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 10px;
+}
+.reviewimg{
+    margin: 80px auto;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    justify-content: space-between;
+}
+.reviewimg img{
+    display: block;
+    transition: all 1s;
+}
+
+.reviewimg a{
+overflow: hidden;
+position: relative;
+border-radius: 20px;
+
+}
+
+.reviewimg a:hover .black{
+    opacity: 1;
+}
+
+.reviewimg a:hover img{
+    transform: scale(1.2);
+}
+
+.black{
+    width: 100%;
+    height: 100%;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0,0.5);
+    position: absolute;
+    top:0;
+    left: 0;
+    opacity: 0;
+
+}
+
+.black p{
+    border: 1px solid #fff;
+    padding: 10px 10px;
+    color: #fff;
+}
+
+.black p:hover{
+    background-color: rgb(255, 255, 255,0.5);
+    color: #000;
+}
+
+.user{
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-box;
+    display: flex;
+    align-items: center;
+}
+.name{
+    margin-left: 20px;
+    text-align: left;
+}
+
+.user h5{
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user p{
+    color: #a2a2a2;
+}
+
+.rew1{
+    padding: 50px 0;
+    margin: 50px 0;
+    width: 750px;
+    text-align: left;
+
+}
+
+.rewimg{
+   margin-top: 20px;
+}
+
+.rewtext h3{
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.rewtext p{
+    color: #686868;
+}
+
+
+.rewgood{
+    margin-top: 20px;
+    display: inline-block;
+    padding: 5px 40px;
+    border-radius: 20px;
+    border: 1px solid #B2B2B2;
+    color: #B2B2B2;
+    background: url(./img/sub/likeicon.png) no-repeat  85% 45% ;
+}
+.rewgood:hover{
+   background-color: rgb(255, 196, 0);
+   color: #333;
+   font-weight: 600;
+   border: 1px solid rgb(255, 196, 0);
+}
+
+/* 서브4-이벤트,공지사항 */
+
+.sub4{
+    width: 1320px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.sub4 h2{
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+#event{
+    padding: 60px 0;
+}
+
+#cs{
+    width: 1320px;
+    padding: 60px 0;
+}
+
+
+
+.sub4 h4{
+    font-size: 20px;
+    color: #333;
+    font-weight: 400;
+    margin-top: 10px;
+}
+table{
+    width: 1320px;
+    margin: 30px auto 30px;
+    border-top: 3px solid #000;
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid #ddd;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+td{
+    border-bottom: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+td a{
+    color: #333;
+    font-size: 20px;
+}
+
+td a:hover{
+    text-decoration: underline;
+    color: #00B2BC;
+}
+
+tr td:nth-child(1){
+    color: #b2b2b2;
+    font-size: 20px;
+}
+
+tr td:nth-child(2){
+   text-align: left;
+}
+tr td:nth-child(3){
+    color: #b2b2b2;
+    font-size: 16px;
+}
+
+.ba{
+    width: 1320px;
+    margin: auto;
+    text-align: center;
+}
+
+.ba a{
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+}
+
+.ba a:hover{
+    background-color: #00B2BC;
+    color: #fff;
+}
+
+.ba_on{
+    background-color: #00B2BC;
+    color: #fff;
+}
+
+/* 이벤트배너 */
+/* 슬라이드배너 꾸미기 */
+.sub4_gallery {
+	width: 100%;
+	margin: 50px auto;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.sub4_gallery_inner {
+	width: 100%;
+	overflow: hidden;
+}
+
+.sub4_gallery .swiper-slide a {
+	width: 100%;
+	height: 100%;
+}
+
+.sub4_gallery .swiper-slide img {
+	display: block;
+	width: 100%;
+}
+
+
+.sub4_gallery .swiper-button-prev{
+    position: absolute;
+    top: -20px;
+    left: auto;
+    right: 40px;
+}
+
+.sub4_gallery .swiper-button-next{
+    right: 0;
+    top:-20px
+}
+
+.sub4_gallery .swiper-button-prev,
+.sub4_gallery .swiper-button-next{
+	width: 32px;
+	height: 32px;
+}
+.sub4_gallery .swiper-button-prev:after,
+.sub4_gallery .swiper-button-next:after{
+	content: '';
+	display: block;
+	width: 32px;
+	height: 32px;
+}
+.sub4_gallery .swiper-button-prev:after{
+	background: url(./img/sub/sub4-1.png);
+}
+.sub4_gallery .swiper-button-next:after{
+	background: url(./img/sub/sub4-2.png);
+}
+
+
+/* 블릿버튼 크기, 색상, 투명도 */
+.sub4_gallery .swiper-pagination-bullet {
+	background: pink;
+	width: 10px;
+	height: 10px;
+	opacity: 0.5;
+}
+
+/* 블릿버튼 페이지 표시날 때 투명도 */
+.sub4_gallery .swiper-pagination-bullet-active {
+	opacity: 1;
+}
+
+/* 블릿버튼 위치 */
+.sub4_gallery .swiper-horizontal>.swiper-pagination-bullets,
+.sub4_gallery .swiper-pagination-bullets.swiper-pagination-horizontal {
+	bottom: 0px;
+}
+/* 이벤트배너 */
+
+
+
+
+
+/* 푸터 */
+
+footer {
+    width: 100%;
+    background-color: #00B2BC;
+    padding: 50px 0;
+}
+
+.footer_in {
+    width: 1320px;
+    margin: auto;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #eee;
+
+}
+
+.footerbox {
+    width: 60%;
+    text-align: left;
+}
+
+
+.footer_in ul {
+    display: -moz-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.footer_in li {
+    margin-right: 10px;
+}
+
+
+.footer_in li a {
+    color: #eee;
+    font-size: 18px;
+    display: block;
+}
+
+.footer_in li a:hover {
+    color: #fff;
+    font-weight: 800;
+}
