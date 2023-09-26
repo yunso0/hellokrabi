@@ -634,11 +634,13 @@ font-size: 15px;
 
 .gallery3 .swiper-slide img {
 	display: block;
-    transition: all 0.5s;
+    transition: all 0.6s;
 
 }
 
 .gallery3 .imgbox{
+    width: 307px;
+    height: 317px;
     overflow: hidden;
 }
 
